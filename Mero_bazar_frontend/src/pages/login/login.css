@@ -1,0 +1,132 @@
+.full-height-bg{
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* height: 100vh; */
+    /* background: linear-gradient(#2A00B7, #42006C); */
+    background: linear-gradient(rgba(0,0,0,0.590), rgba(0,0,0,0.460)), url(../../assets/images/onlineshop.jpg);
+}
+
+.login-card{
+/* background-color: white; */
+/* height: 65%; */
+/* width: 30%;
+justify-content:center; */
+width: 100%;
+max-width: 400px;
+border-radius: 20px;
+background: #ffffff;
+box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+transition: transform 0.3s, box-shadow 0.3s;
+padding: 30px;
+}
+.card:hover {
+transform: translateY(-5px);
+box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
+}
+
+
+/* login.css */
+.logo {
+width: 100px;
+height: 100px;
+}
+
+.btn-color{
+color: white;
+background: linear-gradient(#2A00B7, #42006C);
+transition: background-color 0.3s;
+}
+.btn-color:hover{
+transform: scale(1.02);
+}
+.image-button {
+padding: 0;
+border: none;
+background: none;
+}
+.image-button img {
+width: 50px;
+height: 50px;
+}
+.image-button img:hover {
+opacity: 0.8;
+transform: scale(1.1);
+}
+.text-btn{
+padding: 0;
+border: none;
+background: none;
+color: blue;
+cursor: pointer;
+}
+.text-btn:hover {
+opacity: 0.7;
+}
+
+@media screen and (max-width:1000px){
+.card{
+width: 70%;
+}
+}
+
+
+/* ReCaptcha */
+.captcha-container {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.captcha-error {
+    color: #dc3545;
+    font-size: 0.875rem;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+/* Responsive styling for smaller screens */
+@media screen and (max-width: 400px) {
+    .g-recaptcha {
+        transform: scale(0.85);
+        transform-origin: center;
+        margin: 0 -20px;
+    }
+}
+
+/* Custom loader for CAPTCHA verification */
+.captcha-loader {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    border-top-color: #4318FF;
+    animation: spin 1s ease-in-out infinite;
+    margin-left: 10px;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Disabled button state during CAPTCHA verification */
+.btn-register:disabled,
+.btn-color:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+/* CAPTCHA container box shadow and hover effect */
+.captcha-wrapper {
+    padding: 10px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.captcha-wrapper:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}

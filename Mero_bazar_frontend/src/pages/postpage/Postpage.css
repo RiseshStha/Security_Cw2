@@ -1,0 +1,148 @@
+/* Custom Modal Background */
+.custom-modal-bg {
+  background-color: #f0f0f5; /* Soft off-white/grey for a modern, clean look */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Deeper shadow for a more pronounced effect */
+  padding: 20px; /* Add padding inside the modal for more spacing */
+}
+
+/* Custom Modal Header */
+.custom-modal-header {
+  border-bottom: none; /* No border for a seamless design */
+  padding-bottom: 10px; /* Slight padding to give breathing space */
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Space between title and close button */
+  background-color: #4a4a72; /* Darker shade for the header */
+  color: #ffffff; /* White text color for better contrast */
+  border-radius: 15px 15px 0 0; /* Rounded corners at the top */
+}
+
+.custom-modal-title {
+  font-size: 1.75rem; /* Larger title */
+  font-weight: 700; /* Bolder title */
+}
+
+/* Custom Modal Body */
+.custom-modal-body {
+  padding: 25px;
+  border-radius: 10px;
+  background-color: #ffffff; /* White background for the body */
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.05); /* Subtle inner shadow */
+}
+
+/* Custom Form Elements */
+.custom-form-label {
+  font-weight: 600; /* Bolder text for labels */
+  color: #333; /* Darker text for labels */
+}
+
+.custom-form-control {
+  border: 1px solid #ccc; /* Light border with a modern touch */
+  border-radius: 10px; /* More rounded corners */
+  padding: 12px;
+  transition: all 0.3s ease; /* Smooth transitions */
+  background-color: #f8f9fa; /* Light grey background for input fields */
+}
+
+.custom-form-control:focus {
+  border-color: #4a4a72; /* Darker shade for focus */
+  box-shadow: 0 0 8px rgba(74, 74, 114, 0.25); /* Shadow matching the focus color */
+}
+
+/* Custom Button Styles */
+.custom-btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  border-radius: 10px;
+  padding: 12px 24px;
+  transition: all 0.3s ease;
+  color: #ffffff; /* White text for contrast */
+}
+
+.custom-btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+  color: #ffffff;
+  transform: translateY(-2px); /* Slight lift on hover */
+}
+
+.custom-btn-secondary {
+  background-color: #6c757d;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 24px;
+  transition: all 0.3s ease;
+  color: #ffffff; /* White text for contrast */
+}
+
+.custom-btn-secondary:hover {
+  color: #ffffff;
+  background-color: #5a6268;
+  transform: translateY(-2px); /* Slight lift on hover */
+}
+
+/* Custom Image Preview */
+.custom-img-fluid {
+  border-radius: 15px;
+  margin-top: 15px;
+  max-height: 250px; /* Increase height for better visibility */
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow around the image */
+}
+
+/* Custom Modal Footer */
+.custom-modal-footer {
+  border-top: none; /* No border for a seamless design */
+  padding-top: 10px; /* Reduce padding for better alignment */
+  background-color: #f0f0f5; /* Match the footer with the modal background */
+  border-radius: 0 0 15px 15px; /* Rounded corners at the bottom */
+  display: flex; /* Use flexbox to arrange buttons */
+  justify-content: space-between; /* Space out buttons evenly */
+  align-items: center; /* Center buttons vertically */
+}
+
+.custom-btn-close {
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem; /* Larger close button */
+  color: #ffffff; /* Lighter color for subtlety */
+  cursor: pointer; /* Pointer cursor for better UX */
+}
+
+.custom-btn-close:hover {
+  color: #888;
+}
+
+/* Additional Custom Styling */
+.custom-select-category,
+.custom-select-condition,
+.custom-select-delivery,
+.custom-select-negotation {
+  margin-bottom: 15px; /* Add spacing between selects */
+}
+
+.custom-form-select {
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #f8f9fa;
+  transition: all 0.3s ease;
+  border: 1px solid #ddd;
+}
+
+.custom-form-select:focus {
+  border-color: #4a4a72;
+  box-shadow: 0 0 8px rgba(74, 74, 114, 0.25);
+}
+
+@media (max-width: 576px) {
+  .custom-modal-footer {
+    padding-top: 10px; /* Adjust padding for smaller screens */
+  }
+  .custom-btn-primary,
+  .custom-btn-secondary {
+    flex: 1; /* Make buttons flexible to fill the row */
+    margin: 5px; /* Add margin between the buttons */
+    padding: 10px 20px;
+  }
+}

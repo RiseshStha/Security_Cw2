@@ -1,0 +1,64 @@
+body{
+    margin: 0px;
+    background-color: #E3E6E6;
+}
+
+.profile-height{
+    height: 90vh;
+}
+
+.user-profile{
+    height: 200px;
+    width: 200px;
+    align-items: center;
+}
+
+
+.profile-post-card{
+    
+}
+.profile-post-card img{
+ height: 100px;
+ width: 100px;
+}
+.profile-post-card-text p{
+    margin: 0;
+}
+
+.text-color-primary{
+    color: #0056b3;
+    
+}
+
+.btn-edit{
+    background-color: green;
+    color: white;
+}
+
+.btn-edit:hover{
+    /* font-weight: bold; */
+}
+.btn-delete{
+    background-color: red;
+    color: white;
+}
+
+.btn-responsive {
+    padding: 10px 20px; /* Adjust padding to your preference */
+    font-size: 14px; /* Adjust font size to your preference */
+  }
+  
+  @media (max-width: 768px) {
+    .btn-responsive {
+      padding: 8px 16px;
+      font-size: 12px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .btn-responsive {
+      padding: 6px 12px;
+      font-size: 10px;
+    }
+  }
+  

@@ -1,0 +1,15 @@
+.full-height-bg{
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background: linear-gradient(#2A00B7, #42006C);
+}
+
+.card{
+background-color: white;
+/* height: 65%; */
+width: 30%;
+justify-content:center;
+}

@@ -1,0 +1,176 @@
+body {
+  line-height: 1.7;
+}
+
+/* General styling for the navbar */
+.navbar {
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ul {
+  list-style-type: none; /* Remove default markers */
+}
+
+/* Styling for the brand */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand img {
+  height: 40px;
+  width: 40px;
+  margin-right: 0.5rem; /* Adjust space between logo and brand text */
+}
+
+.brand-text {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+/* Move the toggle button to the right */
+.navbar-toggler {
+  margin-left: auto;
+}
+
+/* Styling for the search form */
+.search-form {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  flex-grow: 1;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+}
+
+.btn-brand {
+  border-radius: 25px;
+  padding: 0.5rem 1rem;
+  margin-left: 0.5rem;
+}
+
+/* Styling for the icons */
+.nav-icon {
+  font-size: 2.3rem;
+  color: #fff;
+}
+
+.btn-brand:hover {
+  background-color: var(--c-brand-light);
+  border-color: var(--c-brand-light);
+  transform: scale(1.00);
+  color: white;
+  font-weight: bold;
+}
+
+/* Styling for the post button */
+.icon {
+  font-size: 1.2rem;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  border-radius: 25px;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+/* Adjustments for small screens */
+@media (max-width: 767px) {
+  .navbar .container-fluid {
+      flex-direction: row;
+      align-items: center;
+  }
+  .navbar-brand {
+      display: flex;
+      align-items: center;
+      width: auto;
+      justify-content: flex-start;
+  }
+  .navbar-toggler {
+      margin-left: auto;
+      display: flex;
+  }
+  .search-form {
+      width: 100%;
+      margin-top: 0.5rem;
+      display: flex;
+      justify-content: center;
+  }
+  .search-input {
+      width: calc(100% - 100px);
+      margin-right: 0.5rem;
+  }
+  .btn-brand {
+      width: 80px;
+      padding: 0.5rem;
+  }
+  .nav-ul {
+      flex-direction: row;
+      width: 100%;
+      margin-top: 0.75rem;
+      justify-content: space-between;
+  }
+  .nav-ul .nav-item {
+      width: auto;
+      margin: 0.25rem 0;
+  }
+  .nav-icon {
+      font-size: 2rem;
+  }
+  .btn-primary {
+      width: 100%;
+      justify-content: center;
+  }
+  .dropdown-menu {
+      width: 100%;
+  }
+}
+
+/* Search drop down */
+.search-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: block;
+  padding: 0.5rem 0;
+  margin: 0;
+  font-size: 1rem;
+  color: #212529;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+}
+
+.search-dropdown .dropdown-item {
+  display: block;
+  width: 100%;
+  padding: 0.25rem 1.5rem;
+  clear: both;
+  font-weight: 400;
+  color: #212529;
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+}
+
+.search-dropdown .dropdown-item:hover {
+  background-color: #f8f9fa;
+}

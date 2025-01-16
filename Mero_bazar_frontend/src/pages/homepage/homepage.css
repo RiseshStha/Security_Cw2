@@ -1,0 +1,345 @@
+
+@media (max-width: 1030px){
+  .home-banner-1,
+  .home-banner-2,
+  .home-banner-3{
+    background-position: 65% center;
+  }
+  .home-banner-text{
+    transform: translate(-80%, -50%);
+  }
+}
+@media (max-width: 991px){
+  .home-banner-1,
+  .home-banner-2,
+  .home-banner-3{
+    background-position: 70% center;
+  }
+  .home-banner-text{
+    transform: translate(-80%, -50%);
+  }
+  .product-list .product-image .condition{
+    left:1rem;
+    top: 1.188rem;
+  }
+}
+@media (max-width: 767px){
+  .home-banner-1,
+  .home-banner-2,
+  .home-banner-3{
+    background-position: 80% center;
+  }
+  .home-banner-text{
+    transform: translate(-80%, -50%);
+  }
+  .product-list .product-image .condition{
+    left:1rem;
+    top: 1.188rem;
+  }
+  
+  
+}
+
+
+
+.home-top-container{
+  width: 100vw;
+  height: 200px;
+  display: block;
+}
+.carousel-item img {
+  height: 200px;
+  object-fit: cover; /* Ensures the image covers the area without stretching */
+}
+
+/* Home banner  */
+.home-banner-1,
+.home-banner-2,
+.home-banner-3{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 90% center;
+  min-height: 250px;
+  position: relative;
+}
+
+.home-banner-3{
+  background-image: url('../../assets/images/onlineshop.jpg');
+}
+.home-banner-1{
+  background-image: url('../../assets/images/shoes.jpg');
+}
+.home-banner-2{
+  background-image: url('../../assets/images/shoes1.jpg');
+}
+
+.home-banner-text{
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translate(-110%, -50%);
+
+}
+
+.carousel-indicators [data-bs-target]{
+  /* background-color: #007bff; */
+  width: 2.5rem;
+  height: 0.313rem;
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon{
+  /* background: transparent; */
+}
+
+/* Product CSS */
+.products{
+  padding-top: 0.75rem; 
+}
+
+/* .headline::before{
+  content: '';
+  width: 30%;
+  height: 0.125rem;
+  background-color: blue;
+  position: absolute;
+  bottom: 0;
+  left:50%;
+  transform:translate(-50%, -50%);
+  border-radius: 0.625rem;
+} */
+
+.products a{
+  text-decoration: none;
+  color: black;
+}
+
+
+.product-list .product-image img{
+  /* height: 400px; */
+  transition: all 500ms ease-in-out;
+}
+.product-list .product-image .product-image-secondary{
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top:0;
+  bottom: 0;
+}
+.product-list .product-image:hover .product-image-secondary{
+  opacity: 1;
+}
+.product-list .product-name h3{
+  font-size: 1.125rem;
+  color: black;
+  transition: all 0.3s ease 0s;
+}
+.product-list .product-name h3:hover{
+  color: blue;
+}
+
+.product-list .product-name .amount{
+  color: blue;
+  font-weight: 500;
+}
+
+/* Sales */
+ .condition{
+  background: blue;
+  border-radius: 0.313rem;
+  color: white;
+  font-size: 0.813rem;
+  letter-spacing: 0.125rem;
+  line-height: 1.563;
+  padding: 0.125rem 0.813rem;
+  text-transform: uppercase;
+  position: absolute;
+  left:1rem;
+  top: 1rem;
+  z-index: 99;
+}
+
+/* Button */
+.btn{
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 0;
+    padding: 10px 24px;
+    color: white;
+}
+
+.btn-brand{
+    background-color: var(--c-brand);
+}
+.btn-brand:hover{
+    background-color: var(--c-brand-light);
+    border-color: var(--c-brand-light);
+    color: white;
+}
+.homepage-content {
+  background-color: #E3E6E6;
+  min-height: 90vh;
+    /* padding-top: 80px; Ensure content is not hidden under the Navbar */
+  }
+
+  .category-card {
+    background-color: #232F3E;
+    border-radius: 5px;
+  }
+  
+  /* .product-card {
+    padding: 15px;
+  } */
+  
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+
+/* product */
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 20px 0;
+  justify-content: center; /* Center align the items */
+}
+
+.product-card {
+  background-color: white;
+  flex: 0 1 200px; /* Fix the base size to 200px */
+  max-width: 330px; /* Maximum width to maintain compact size */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  /* text-align: center; */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* modal background of post page
+.modal-bg{
+background-color: #E3E6E6;
+} */
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+  width: 340px;
+  /* width: 100%; */
+  height: 220px;
+  /* Adjust the height as needed */
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.product-card h3 {
+  font-size: 1em;
+  margin: 10px 0;
+}
+
+.product-card p {
+  margin: 5px 0;
+  font-size: 0.9em;
+}
+
+
+/* Product */
+.product-card-link {
+text-decoration: none;
+color: inherit;
+}
+
+.product-card-link:hover {
+text-decoration: none;
+color: inherit;
+}
+
+
+/* Ensure the text is responsive */
+.category-card {
+overflow: hidden;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+display: none;
+}
+
+.no-scrollbar {
+-ms-overflow-style: none;  /* IE and Edge */
+scrollbar-width: none;  /* Firefox */
+}
+
+.category-item {
+display: inline-block;
+padding: 5px 10px;
+border: 1px solid #ddd;
+border-radius: 15px;
+background-color: #f8f9fa;
+font-size: 14px;
+font-weight: bold;
+white-space: nowrap;
+transition: background-color 0.3s;
+}
+
+.category-item:hover {
+background-color: #e9ecef;
+cursor: pointer;
+}
+
+
+/* pagination btn */
+.pagination-controls {
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 10px; /* Add space between buttons and text */
+flex-direction: row; /* Keep buttons in a row */
+}
+
+.pagination-btn {
+background: linear-gradient(45deg, #6a11cb, #2575fc); /* Gradient background */
+color: white;
+border-radius: 50%; /* Keep the buttons circular */
+width: 40px;
+height: 40px;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 1rem; /* Default icon size */
+transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+border: none;
+}
+
+.pagination-btn:hover {
+background: linear-gradient(45deg, #2575fc, #6a11cb); /* Slight color inversion on hover */
+transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+.pagination-info {
+font-size: 1rem;
+font-weight: 500;
+margin: 10px 0; /* Add some margin for spacing */
+color: #333; /* Dark text color for better contrast */
+}
+
+@media (max-width: 767px) {
+.pagination-controls {
+    flex-direction: row; /* Keep buttons in a row */
+}
+
+.pagination-btn {
+    width: 20px; /* Smaller width on smaller screens */
+    height: 30px; /* Smaller height on smaller screens */
+    font-size: 0.75rem; /* Smaller icon size on smaller screens */
+}
+
+.pagination-info {
+    font-size: 0.875rem; /* Slightly smaller text size */
+}
+}
+

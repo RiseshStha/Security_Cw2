@@ -1,0 +1,214 @@
+@media (min-width: 678px) and (max-width: 991px) {
+  .similar-products-details .similar-product {
+    flex: 0 1 calc(50% - 10px) !important;
+    max-width: calc(40% - 10px) !important;
+  }
+  .similar-products-details {
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+}
+}
+
+
+.post-detail-container {
+  margin-top: 5px;
+  margin-right: 10px;
+  margin-left: 10px;
+  background-color: #E3E6E6;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.product-image {
+  width: 100%;
+  max-height: 300px;
+  border-radius: 10px;
+}
+.similar-products-details img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+.product-info {
+  margin-top: 20px;
+}
+.post-info {
+  background: #f1f1f1;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+.contact-info .seller-info {
+  display: flex;
+  align-items: center;
+}
+.contact-info .seller-info img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.comments {
+  margin-top: 20px;
+}
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+}
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* similar product */
+.similar-product {
+  width: 80%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.similar-product img {
+  width: 100%;
+  height: 178px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.similar-product p {
+  margin: 5px 0;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.similar-product:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.similar-product .product-info {
+  font-size: 14px;
+}
+/* Rating */
+.comment-rating .fa-star,
+.comment-rating .fa-star-o {
+  font-size: 1rem; /* Adjust the size as needed */
+}
+
+/* PostDetailPage.css */
+
+.post-detail-card {
+background-color: #202020;
+border: none;
+padding: 20px;
+}
+
+.post-detail-form-color {
+background-color: #303030;
+padding: 15px;
+border-radius: 5px;
+}
+
+.post-detail-form-control {
+background-color: #121212;
+color: white;
+border: 1px solid #444;
+margin-right: 10px;
+}
+
+.post-detail-form-control::placeholder {
+color: #888;
+}
+
+.comment-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px; /* Add margin for spacing */
+}
+
+.comment {
+  display: flex;
+  align-items: flex-start; /* Align image and content */
+  margin-bottom: 20px;
+}
+
+.comment-body {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex: 1; /* Take available space */
+}
+
+.comment-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.comment-username {
+  font-weight: bold;
+}
+
+.comment-time {
+  font-size: 0.9em;
+  color: #777;
+}
+
+.comment-content {
+  margin-bottom: 10px;
+}
+
+.comment-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.comment-like, .comment-reply, .comment-toggle-replies {
+  cursor: pointer;
+  color: #007bff;
+}
+
+.comment-like:hover, .comment-reply:hover, .comment-toggle-replies:hover {
+  text-decoration: underline;
+}
+
+.comment-reply-box {
+  margin-top: 10px;
+}
+
+.comment-reply-input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.comment-reply-button {
+  margin-top: 5px;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.comment-reply-button:hover {
+  background-color: #0056b3;
+}
+
+.comment-list {
+  margin-top: 20px;
+}
+
+.post-detail-comment-container {
+  margin-bottom: 15px;
+}
+
+.reply {
+  margin-left: 50px;
+}
