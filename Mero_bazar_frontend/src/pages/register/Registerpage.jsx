@@ -287,7 +287,7 @@ const Registerpage = () => {
             </button>
           </div>
 
-          <div className="mt-3 d-flex mb-3">
+          <div className="mt-3 d-flex mb-1">
             <span className="align-self-center me-2">Already have an account?</span>
             <button 
               onClick={() => navigate('/login')} 
