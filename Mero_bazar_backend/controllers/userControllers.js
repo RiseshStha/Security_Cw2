@@ -130,35 +130,103 @@ const createUser = async (req, res) => {
 };
 
 // Enhanced loginUser with CAPTCHA
-const loginUser = async (req, res) => {
-    const { phoneNumber, password, captchaToken } = req.body;
+// const loginUser = async (req, res) => {
+//     const { phoneNumber, password, captchaToken } = req.body;
 
-    // Validate required fields
-    if (!phoneNumber || !password || !captchaToken) {
-        return res.status(400).json({
-            success: false,
-            message: "Please fill all required fields including CAPTCHA"
-        });
-    }
-    if ( !captchaToken) {
-        return res.status(400).json({
-            success: false,
-            message: "Please fill the CAPTCHA"
-        });
-    }
+//     // Validate required fields
+//     if (!phoneNumber || !password || !captchaToken) {
+//         return res.status(400).json({
+//             success: false,
+//             message: "Please fill all required fields including CAPTCHA"
+//         });
+//     }
+//     if ( !captchaToken) {
+//         return res.status(400).json({
+//             success: false,
+//             message: "Please fill the CAPTCHA"
+//         });
+//     }
+
+//     try {
+
+//         // Find user
+//         const user = await userModel.findOne({ phoneNumber });
+//         if (!user) {
+//             return res.status(400).json({
+//                 success: false,
+//                 message: "User not found"
+//             });
+//         }
+
+//         // Check if account is locked
+//         if (user.lockUntil && user.lockUntil > Date.now()) {
+//             const minutesLeft = Math.ceil((user.lockUntil - Date.now()) / (60 * 1000));
+//             return res.status(403).json({
+//                 success: false,
+//                 message: `Account is locked. Please try again in ${minutesLeft} minutes`
+//             });
+//         }
+
+//         // Verify password
+//         const isValidPassword = await bcrypt.compare(password, user.password);
+//         if (!isValidPassword) {
+//             // Update login attempts
+//             if(user.loginAttempts < 5){
+//                 user.loginAttempts = (user.loginAttempts || 0) + 1;
+//             }else{
+//                 user.loginAttempts = 0;
+//             }
+            
+            
+//             if (user.loginAttempts >= MAX_LOGIN_ATTEMPTS) {
+//                 user.lockUntil = Date.now() + LOCK_TIME;
+//                 await user.save();
+//                 return res.status(403).json({
+//                     success: false,
+//                     message: "Too many failed attempts. Account is locked for 15 minutes"
+//                 });
+//             }
+            
+//             await user.save();
+//             return res.status(400).json({
+//                 success: false,
+//                 message: `Invalid password. ${MAX_LOGIN_ATTEMPTS - user.loginAttempts} attempts remaining`
+//             });
+//         }
+
+//         // Reset login attempts on successful login
+//         user.loginAttempts = 0;
+//         user.lockUntil = null;
+//         await user.save();
+
+//         // Generate token
+//         const token = jwt.sign(
+//             { id: user._id },
+//             process.env.JWT_SECRET,
+//             { expiresIn: '10h' }
+//         );
+
+//         return res.status(200).json({
+//             success: true,
+//             message: "Login successful",
+//             token,
+//             userData: user
+//         });
+
+//     } catch (error) {
+//         console.error('Login error:', error);
+//         return res.status(500).json({
+//             success: false,
+//             message: "Internal server error"
+//         });
+//     }
+// };
+
+const loginUser = async (req, res) => {
+    const { phoneNumber, password } = req.body;
 
     try {
-        // // Verify CAPTCHA
-        // const isCaptchaValid = await verifyCaptchaToken(captchaToken);
-        // if (!isCaptchaValid) {
-        //     return res.status(400).json({
-        //         success: false,
-        //         message: "CAPTCHA verification failed"
-        //     });
-        // }
-
-        // Find user
-        const user = await userModel.findOne({ phoneNumber });
+        const user = await User.findOne({ phoneNumber });
         if (!user) {
             return res.status(400).json({
                 success: false,
@@ -175,16 +243,9 @@ const loginUser = async (req, res) => {
             });
         }
 
-        // Verify password
         const isValidPassword = await bcrypt.compare(password, user.password);
         if (!isValidPassword) {
-            // Update login attempts
-            if(user.loginAttempts < 5){
-                user.loginAttempts = (user.loginAttempts || 0) + 1;
-            }else{
-                user.loginAttempts = 0;
-            }
-            
+            user.loginAttempts = (user.loginAttempts || 0) + 1;
             
             if (user.loginAttempts >= MAX_LOGIN_ATTEMPTS) {
                 user.lockUntil = Date.now() + LOCK_TIME;
@@ -207,9 +268,12 @@ const loginUser = async (req, res) => {
         user.lockUntil = null;
         await user.save();
 
-        // Generate token
+        // Generate token with admin status
         const token = jwt.sign(
-            { id: user._id },
+            { 
+                id: user._id,
+                isAdmin: user.isAdmin 
+            },
             process.env.JWT_SECRET,
             { expiresIn: '10h' }
         );
@@ -218,7 +282,10 @@ const loginUser = async (req, res) => {
             success: true,
             message: "Login successful",
             token,
-            userData: user
+            userData: {
+                ...user.toObject(),
+                password: undefined
+            }
         });
 
     } catch (error) {
@@ -461,6 +528,26 @@ const updateProfileImage = async (req, res) => {
     }
 };
 
+//only for admin 
+const getAllUsers = async (req, res) => {
+    try {
+        const users = await User.find()
+            .select('-password')
+            .sort({ createdAt: -1 });
+
+        res.status(200).json({
+            success: true,
+            users
+        });
+    } catch (error) {
+        console.error('Error fetching users:', error);
+        res.status(500).json({
+            success: false,
+            message: "Internal server error"
+        });
+    }
+};
+
 module.exports = { 
     createUser, 
     loginUser,
@@ -468,5 +555,6 @@ module.exports = {
     forgotPassword,
     verifyOtpAndPassword,
     updateUser,
-    updateProfileImage
+    updateProfileImage,
+    getAllUsers,
  };

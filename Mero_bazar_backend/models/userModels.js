@@ -39,7 +39,11 @@ const userSchema = new mongoose.Schema({
     lockUntil: {
         type: Date,
         default: null
-    }
+    },
+    isAdmin: {
+        type: Boolean,
+        default: false
+    },
 });
 
 
