@@ -92,7 +92,7 @@ const Homepage = () => {
             <div className="carousel-item">
               <div className="home-banner-3">
                 <div className="home-banner-text">
-                  <h1 className="text-white">BargainBazzar</h1>
+                  <h1 className="text-white">MeroBazzar</h1>
                   <h2 className="text-white">50% Discount for this Season</h2>
                 </div>
               </div>
