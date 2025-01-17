@@ -254,6 +254,7 @@ const Registerpage = () => {
             {phoneNumberError && <p className="text-danger mt-0 mb-0">{phoneNumberError}</p>}
           </div>
 
+          <div className="mt-1">
           <PasswordInput
             value={password}
             onChange={handlePassword}
@@ -261,6 +262,12 @@ const Registerpage = () => {
             placeholder="Enter password"
             autoComplete="new-password"
           />
+          </div>
+
+          <div>
+            
+          </div>
+          
 
           <PasswordInput
             value={confirmPassword}
@@ -270,7 +277,7 @@ const Registerpage = () => {
             error={confirmPasswordError}
             autoComplete="new-password"
           />
-          <div className="mt-3 d-flex justify-content-center">
+          <div className="mt-1 d-flex justify-content-center">
             <ReCAPTCHA
               sitekey="6LeHWLkqAAAAAMusqcr3Ose4uxIEtBxob9wwyrI6"
               onChange={handleCaptchaChange}
@@ -287,7 +294,7 @@ const Registerpage = () => {
             </button>
           </div>
 
-          <div className="mt-3 d-flex mb-1">
+          <div className="mt-1 d-flex mb-1">
             <span className="align-self-center me-2">Already have an account?</span>
             <button 
               onClick={() => navigate('/login')} 
