@@ -179,7 +179,7 @@ const Loginpage = () => {
           {phoneNumberError && (
             <p className="text-danger mb-0">{phoneNumberError}</p>
           )}
-          <div className="position-relative mt-3 input-group form-outline">
+          <div className="position-relative mt-2 input-group form-outline">
             <span className="input-group-text">
               <FaLock />
             </span>
