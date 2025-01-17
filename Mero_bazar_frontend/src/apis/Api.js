@@ -107,16 +107,23 @@ export const send = (data) => Api.post('api/message/send', data);
 export const getComment = (data) => Api.get('api/message/conversation', data)
 
 // Admin API endpoints
-export const getAllUsers = () => {
-  return Api.get("/user/all-users");
+// Admin API functions
+export const getAllUsersApi = async () => {
+  try {
+      const response = await Api.get(`api/user/get-users`);
+      return response;
+  } catch (error) {
+      throw error;
+  }
 };
 
-export const toggleUserBlock = (userId) => {
-  return Api.put(`/user/toggle-block/${userId}`);
-};
-
-export const getLoginActivity = () => {
-  return Api.get("/user/login-activity");
+export const toggleUserBlockApi = async (userId) => {
+  try {
+      const response = await Api.put(`api/user/toggle-block/${userId}`, {},);
+      return response;
+  } catch (error) {
+      throw error;
+  }
 };
 
 // Admin Authentication Check

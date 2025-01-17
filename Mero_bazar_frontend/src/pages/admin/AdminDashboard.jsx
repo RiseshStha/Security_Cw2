@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { getAllUsersApi, toggleUserBlockApi } from "../../apis/Api";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { FaUsers, FaSignOutAlt, FaUserLock, FaUserCheck } from "react-icons/fa";
@@ -26,22 +27,16 @@ const AdminDashboard = () => {
 
   const fetchUsers = async () => {
     try {
-      const token = localStorage.getItem("token");
-      const response = await fetch("/api/user/all-users", {
-        headers: {
-          Authorization: `Bearer ${token}`,
-        },
-      });
-
-      const data = await response.json();
-      if (data.success) {
-        setUsers(data.users);
+      setLoading(true);
+      const response = await getAllUsersApi();
+      if (response.data.success) {
+        setUsers(response.data.users);
       } else {
         toast.error("Failed to fetch users");
       }
     } catch (error) {
       console.error("Error fetching users:", error);
-      toast.error("Error loading users");
+      toast.error(error.response?.data?.message || "Error loading users");
     } finally {
       setLoading(false);
     }
@@ -56,24 +51,16 @@ const AdminDashboard = () => {
 
   const handleToggleBlock = async (userId) => {
     try {
-      const token = localStorage.getItem("token");
-      const response = await fetch(`/api/user/toggle-block/${userId}`, {
-        method: "PUT",
-        headers: {
-          Authorization: `Bearer ${token}`,
-        },
-      });
-
-      const data = await response.json();
-      if (data.success) {
-        toast.success(data.message);
+      const response = await toggleUserBlockApi(userId);
+      if (response.data.success) {
+        toast.success(response.data.message);
         fetchUsers();
       } else {
-        toast.error(data.message);
+        toast.error(response.data.message);
       }
     } catch (error) {
       console.error("Error toggling user block:", error);
-      toast.error("Failed to update user status");
+      toast.error(error.response?.data?.message || "Failed to update user status");
     }
   };
 
