@@ -13,6 +13,7 @@ const PasswordInput = ({
   value, 
   onChange, 
   label = "Password",
+  className="fs-6",
   placeholder = "Enter your password",
   error,
   autoComplete
@@ -59,7 +60,7 @@ const PasswordInput = ({
 
   return (
     <div className="password-field-container">
-      <label className="form-label mt-1 mb-0 fs-5">{label}</label>
+      <label className="form-label mt-0 mb-0 fs-6">{label}</label>
       
       <div className="position-relative">
         <input
@@ -232,8 +233,8 @@ const Registerpage = () => {
             <div className="underline"></div>
           </div>
           
-          <div className="mt-1">
-            <label className="form-label fs-5 mb-0">Full Name</label>
+          <div className="mt-2">
+            <label className="form-label fs-6 mb-0">Full Name</label>
             <input
               onChange={handleFullName}
               type="text"
@@ -244,7 +245,7 @@ const Registerpage = () => {
           </div>
 
           <div className="mt-2">
-            <label className="form-label fs-5 mb-0">Number</label>
+            <label className="form-label fs-6 mb-0">Number</label>
             <input
               onChange={handlePhoneNumber}
               type="number"
@@ -254,19 +255,19 @@ const Registerpage = () => {
             {phoneNumberError && <p className="text-danger mt-0 mb-0">{phoneNumberError}</p>}
           </div>
 
-          <div className="mt-0">
           <PasswordInput
             value={password}
             onChange={handlePassword}
             label="Password"
+            className="fs-6"
             placeholder="Enter password"
             autoComplete="new-password"
           />
-          </div>
           <PasswordInput
             value={confirmPassword}
             onChange={handleConfirmPassword}
             label="Confirm Password"
+            className="fs-6"
             placeholder="Confirm password"
             error={confirmPasswordError}
             autoComplete="new-password"
