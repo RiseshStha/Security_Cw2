@@ -77,7 +77,7 @@ const DashboardNavbar = () => {
               width="40"
               className="rounded-circle me-2"
             />
-            <span className="brand-text">BargainBazar</span>
+            <span className="brand-text">MeroBazar</span>
           </Link>
           <button
             className="navbar-toggler"
