@@ -19,6 +19,10 @@ import UserProfile from './pages/userprofile/UserProfile';
 import PostDetailPage from './pages/postdeatailpage/PostDetailPage';
 import ForgotPassword from './pages/forgotpassword/ForgotPassword';
 import Chat from './pages/messagepage/Messagepage';
+import AdminLogin from './components/AdminLogin';
+import AdminDashboard from './pages/admin/AdminDashboard';
+import AdminRoutes from './protected_routes/AdminRoutes';
+
 
 const App = () => {
   const location = useLocation();
@@ -47,6 +51,13 @@ const App = () => {
       <Route path='/profile' element={<UserProfile/>} />
       <Route path='/message' element={<Chat/>} />
       </Route>
+
+        {/* Admin Routes */}
+        <Route path='/admin/login' element={<AdminLogin />} />
+        <Route element={<AdminRoutes />}>
+          <Route path='/admin/dashboard' element={<AdminDashboard />} />
+        </Route>
+
       </Routes>
       <ToastContainer/>
     </>

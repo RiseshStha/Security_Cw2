@@ -1,0 +1,254 @@
+/* Admin Login Styles */
+.admin-login-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #2A00B7, #42006C);
+  }
+  
+  .admin-login-card {
+    width: 100%;
+    max-width: 400px;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .admin-title {
+    color: #2A00B7;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .admin-subtitle {
+    color: #666;
+    font-size: 0.9rem;
+  }
+  
+  .admin-submit-btn {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #2A00B7, #42006C);
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .admin-submit-btn:hover {
+    transform: translateY(-2px);
+  }
+  
+  /* Admin Dashboard Styles */
+  .admin-dashboard-container {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  .admin-sidebar {
+    width: 250px;
+    background: #2A00B7;
+    color: white;
+    padding: 1rem;
+    position: fixed;
+    height: 100vh;
+  }
+  
+  .admin-sidebar-header {
+    padding: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .admin-sidebar-menu {
+    margin-top: 2rem;
+  }
+  
+  .sidebar-btn {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    background: none;
+    border: none;
+    color: white;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .sidebar-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  .sidebar-btn.active {
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  .admin-main-content {
+    flex: 1;
+    padding: 2rem;
+    background: #f5f7fb;
+    margin-left: 250px;
+  }
+  
+  .admin-header {
+    margin-bottom: 2rem;
+  }
+  
+  .admin-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .stat-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .stat-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: rgba(42, 0, 183, 0.1);
+    color: #2A00B7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+  }
+  
+  .stat-info h3 {
+    margin: 0;
+    font-size: 0.875rem;
+    color: #666;
+  }
+  
+  .stat-info p {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  /* Table Styles */
+  .admin-table-container {
+    background: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    overflow-x: auto;
+  }
+  
+  .admin-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .admin-table th {
+    background: #f8f9fa;
+    padding: 1rem;
+    text-align: left;
+    font-weight: 600;
+    color: #444;
+  }
+  
+  .admin-table td {
+    padding: 1rem;
+    border-top: 1px solid #eee;
+  }
+  
+  .status-badge {
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+  
+  .status-badge.active {
+    background-color: #e8f5e9;
+    color: #00C851;
+  }
+  
+  .status-badge.blocked {
+    background-color: #ffebee;
+    color: #ff4444;
+  }
+  
+  .action-btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .action-btn.block {
+    background-color: #ff4444;
+    color: white;
+  }
+  
+  .action-btn.unblock {
+    background-color: #00C851;
+    color: white;
+  }
+  
+  .action-btn:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+  }
+  
+  /* Loading State */
+  .admin-loading {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f5f7fb;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .admin-sidebar {
+      width: 100%;
+      height: auto;
+      position: static;
+    }
+    
+    .admin-main-content {
+      margin-left: 0;
+    }
+    
+    .admin-dashboard-container {
+      flex-direction: column;
+    }
+    
+    .admin-stats-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .admin-table-container {
+      padding: 1rem;
+    }
+    
+    .admin-table {
+      font-size: 0.875rem;
+    }
+    
+    .action-btn {
+      padding: 0.4rem 0.8rem;
+      font-size: 0.875rem;
+    }
+  }

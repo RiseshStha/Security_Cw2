@@ -105,3 +105,27 @@ export const rateProduct = (postId, commentId, rating) => Api.get('/api/product/
 export const send = (data) => Api.post('api/message/send', data);
 
 export const getComment = (data) => Api.get('api/message/conversation', data)
+
+// Admin API endpoints
+export const getAllUsers = () => {
+  return Api.get("/user/all-users");
+};
+
+export const toggleUserBlock = (userId) => {
+  return Api.put(`/user/toggle-block/${userId}`);
+};
+
+export const getLoginActivity = () => {
+  return Api.get("/user/login-activity");
+};
+
+// Admin Authentication Check
+export const checkAdminAuth = () => {
+  const user = JSON.parse(localStorage.getItem("user") || "{}");
+  const token = localStorage.getItem("token");
+  
+  return {
+    isAuthenticated: !!token,
+    isAdmin: user.isAdmin === true,
+  };
+};
