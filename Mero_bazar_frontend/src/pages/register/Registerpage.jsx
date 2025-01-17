@@ -227,12 +227,12 @@ const Registerpage = () => {
     <>
       <div className="d-flex justify-content-center align-items-center vh-100 full-height-bg">
         <div className="card mt-5 login-card position-absolute top-50 start-50 translate-middle ps-3 pe-3 pt-1 pb-1 rounded-4">
-          <div className="text-center mt-4">
+          <div className="text-center mt-3">
             <h1 className="fw-bold">Sign Up</h1>
             <div className="underline"></div>
           </div>
           
-          <div className="mt-2">
+          <div className="mt-1">
             <label className="form-label fs-5 mb-0">Full Name</label>
             <input
               onChange={handleFullName}
