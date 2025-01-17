@@ -23,7 +23,7 @@ const Navbar = () => {
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img src={logo} className="rounded-circle" alt="" />
-            <span className="ms-2">BargainBazzar</span>
+            <span className="ms-2">MeroBazzar</span>
           </a>
           <button
             class="navbar-toggler"
