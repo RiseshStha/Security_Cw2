@@ -245,7 +245,12 @@ const loginUser = async (req, res) => {
 
         const isValidPassword = await bcrypt.compare(password, user.password);
         if (!isValidPassword) {
-            user.loginAttempts = (user.loginAttempts || 0) + 1;
+            // Update login attempts
+            if(user.loginAttempts < 5){
+                user.loginAttempts = (user.loginAttempts || 0) + 1;
+            }else{
+                user.loginAttempts = 0;
+            }
             
             if (user.loginAttempts >= MAX_LOGIN_ATTEMPTS) {
                 user.lockUntil = Date.now() + LOCK_TIME;
