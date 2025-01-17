@@ -39,7 +39,7 @@ height: 100px;
 
 .btn-color{
 color: white;
-background: linear-gradient(#2A00B7, #42006C);
+background: linear-gradient(#6c48e2, #521d73);
 transition: background-color 0.3s;
 }
 .btn-color:hover{
