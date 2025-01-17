@@ -16,7 +16,7 @@ const Landingpage = () => {
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <h1 className='text-uppercase fw-semibold display-1'>Welcome to BargainBazzar</h1>
+            <h1 className='text-uppercase fw-semibold display-1'>Welcome to MeroBazzar</h1>
             <h5>We are here to ease the buying and selling of products</h5>
             <button onClick={handleGetStarted} className='btn btn-brand me-3'>Get Started</button>
             <button className='btn btn-light text-black'>Contact Us</button>
@@ -60,8 +60,8 @@ const Landingpage = () => {
             <div className="section-title">
               <h1 className='display-4 text-white fw-semibold'>Get in touch</h1>
               <div className="line bg-white"></div>
-              <p className='text-white'>Contact no: 987654321</p>
-              <p className='text-white'>Email : bargainbazzar@gmail.com</p>
+              <p className='text-white'>Contact no: 987654322</p>
+              <p className='text-white'>Email : merobazzar@gmail.com</p>
               <p className='text-white'>Location : Kathmandu, Nepal</p>
             </div>
           </div>
