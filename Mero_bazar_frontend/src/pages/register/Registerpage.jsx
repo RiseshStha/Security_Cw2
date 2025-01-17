@@ -276,9 +276,9 @@ const Registerpage = () => {
               onChange={handleCaptchaChange}
             />
           </div>
-          {captchaError && <p className="text-danger text-center mt-2">{captchaError}</p>}
+          {captchaError && <p className="text-danger text-center mt-1">{captchaError}</p>}
 
-          <div className="mt-4">
+          <div className="mt-2">
             <button 
               onClick={handleSubmit} 
               className="btn-register btn btn-color w-100 btn-lg rounded-2"
