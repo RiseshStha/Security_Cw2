@@ -18,7 +18,8 @@ router.post('/forgot_password',userControllers.forgotPassword)
 router.post('/verify_otp',userControllers.verifyOtpAndPassword)
 
 // New admin routes
-router.get('/all-users', authGuard, isAdmin, userControllers.getAllUsers);
+router.get('/get-users', authGuard, userControllers.getAllUsers);
+router.put('/toggle-block/:userId', authGuard, userControllers.toggleUserBlock);
 
 
 

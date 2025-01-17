@@ -226,7 +226,7 @@ const loginUser = async (req, res) => {
     const { phoneNumber, password } = req.body;
 
     try {
-        const user = await User.findOne({ phoneNumber });
+        const user = await userModel.findOne({ phoneNumber });
         if (!user) {
             return res.status(400).json({
                 success: false,
@@ -531,7 +531,16 @@ const updateProfileImage = async (req, res) => {
 //only for admin 
 const getAllUsers = async (req, res) => {
     try {
-        const users = await User.find()
+        // Check if the requesting user is admin
+        const requestingUser = await userModel.findById(req.user.id);
+        if (!requestingUser.isAdmin) {
+            return res.status(403).json({
+                success: false,
+                message: "Access denied: Admin rights required"
+            });
+        }
+
+        const users = await userModel.find()
             .select('-password')
             .sort({ createdAt: -1 });
 
@@ -548,6 +557,47 @@ const getAllUsers = async (req, res) => {
     }
 };
 
+// Toggle user block status
+const toggleUserBlock = async (req, res) => {
+    try {
+        // Check if the requesting user is admin
+        const requestingUser = await userModel.findById(req.user.id);
+        if (!requestingUser.isAdmin) {
+            return res.status(403).json({
+                success: false,
+                message: "Access denied: Admin rights required"
+            });
+        }
+
+        const { userId } = req.params;
+        const user = await userModel.findById(userId);
+
+        if (!user) {
+            return res.status(404).json({
+                success: false,
+                message: "User not found"
+            });
+        }
+
+        // Toggle block status
+        user.lockUntil = user.lockUntil && user.lockUntil > new Date() 
+            ? null  // Unblock if currently blocked
+            : new Date(Date.now() + 30 * 24 * 60 * 60 * 1000); // Block for 30 days
+
+        await user.save();
+
+        res.status(200).json({
+            success: true,
+            message: user.lockUntil ? "User blocked successfully" : "User unblocked successfully"
+        });
+    } catch (error) {
+        console.error('Error toggling user block:', error);
+        res.status(500).json({
+            success: false,
+            message: "Internal server error"
+        });
+    }
+};
 module.exports = { 
     createUser, 
     loginUser,
@@ -557,4 +607,5 @@ module.exports = {
     updateUser,
     updateProfileImage,
     getAllUsers,
+    toggleUserBlock,
  };
