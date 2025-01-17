@@ -9,14 +9,22 @@
 }
 
 .login-card{
-width: 100%;
-max-width: 350px; /* Reduced from 400px */
-border-radius: 15px; /* Reduced from 20px */
-background: #ffffff;
-box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-transition: transform 0.3s, box-shadow 0.3s;
-padding: 20px; /* Reduced from 30px */
-}
+    /* background-color: white; */
+    /* height: 65%; */
+    /* width: 30%;
+    justify-content:center; */
+    width: 100%;
+    max-width: 400px;
+    border-radius: 20px;
+    background: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    padding: 30px;
+    }
+    .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
+    }
 .card:hover {
 transform: translateY(-5px);
 box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
