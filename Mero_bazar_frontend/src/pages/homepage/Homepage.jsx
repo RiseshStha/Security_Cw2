@@ -165,7 +165,7 @@ const Homepage = () => {
           </div>
         </div>
         <div className="mt-4 mb-2 text-dark text-center">
-          <h3 className="">Latest Uploads</h3>
+          <h3 className="fw-bold">Latest Uploads</h3>
         </div>
         <div className="container-fluid">
           <div className="row">
