@@ -1,5 +1,6 @@
 const router = require('express').Router();
 const userControllers = require("../controllers/userControllers");
+const { authGuard, isAdmin } = require('../middleware/authGuard');
 
 //making create user api
 router.post('/create', userControllers.createUser);
@@ -15,6 +16,9 @@ router.put('/update_user_image/:id', userControllers.updateProfileImage);
 router.post('/forgot_password',userControllers.forgotPassword)
 
 router.post('/verify_otp',userControllers.verifyOtpAndPassword)
+
+// New admin routes
+router.get('/all-users', authGuard, isAdmin, userControllers.getAllUsers);
 
 
 
