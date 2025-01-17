@@ -62,7 +62,7 @@ transform: scale(1.1);
 padding: 0;
 border: none;
 background: none;
-color: blue;
+color: rgb(214, 214, 233);
 cursor: pointer;
 }
 .text-btn:hover {
