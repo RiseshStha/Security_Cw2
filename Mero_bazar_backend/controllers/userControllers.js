@@ -12,7 +12,7 @@ const PASSWORD_HISTORY_LIMIT = 5; // Number of previous passwords to remember
 const PASSWORD_EXPIRY_DAYS = 90; // Password expires after 90 days
 
 const MAX_LOGIN_ATTEMPTS = 5;
-const LOCK_TIME = 15 * 60 * 1000; 
+const LOCK_TIME = 2 * 60 * 1000; 
 
 async function isPasswordReused(user, newPassword) {
     // Check against current password first
@@ -257,9 +257,10 @@ const loginUser = async (req, res) => {
                 await user.save();
                 return res.status(403).json({
                     success: false,
-                    message: "Too many failed attempts. Account is locked for 15 minutes"
+                    message: "Too many failed attempts. Account is locked for 2 minutes"
                 });
             }
+            // if(isPasswordExpired)
             
             await user.save();
             return res.status(400).json({
@@ -280,7 +281,7 @@ const loginUser = async (req, res) => {
                 isAdmin: user.isAdmin 
             },
             process.env.JWT_SECRET,
-            { expiresIn: '10h' }
+            { expiresIn: '5h' }
         );
 
         return res.status(200).json({
@@ -410,13 +411,13 @@ const verifyOtpAndPassword = async (req, res) => {
         }
 
         // Check password history
-        const isReused = await isPasswordReused(user, password);
-        if (isReused) {
-            return res.status(400).json({
-                success: false,
-                message: `Cannot reuse any of your last ${SECURITY_CONFIG.PASSWORD_HISTORY_LIMIT} passwords`
-            });
-        }
+        // const isReused = await isPasswordReused(user, password);
+        // if (isReused) {
+        //     return res.status(400).json({
+        //         success: false,
+        //         message: `Cannot reuse any of your last ${SECURITY_CONFIG.PASSWORD_HISTORY_LIMIT} passwords`
+        //     });
+        // }
 
         // Hash new password
         const salt = await bcrypt.genSalt(10);

@@ -36,21 +36,21 @@ const PasswordInput = ({
         return { 
           width: '33%', 
           color: '#ff4444', 
-          text: 'Weak',
+          text: 'Weak Password Strength',
           bgColor: '#ffe5e5'
         };
       case strength <= 4:
         return { 
           width: '66%', 
           color: '#ffa700', 
-          text: 'Medium',
+          text: 'Medium Password Strength',
           bgColor: '#fff3e0'
         };
       default:
         return { 
           width: '100%', 
           color: '#00C851', 
-          text: 'Strong',
+          text: 'Strong Password Strength',
           bgColor: '#e8f5e9'
         };
     }
@@ -157,13 +157,14 @@ const Registerpage = () => {
     const hasLowerCase = /[a-z]/.test(password);
     const hasNumbers = /\d/.test(password);
     const hasSpecialChar = /[^A-Za-z0-9]/.test(password);
-    const isLengthValid = password.length >= 8;
+    const isLengthValid = password.length >= 8 && password.length <= 21 ;
 
     if (!isLengthValid || !hasUpperCase || !hasLowerCase || !hasNumbers || !hasSpecialChar) {
       return 'Password must be at least 8 characters and include uppercase, lowercase, number, and special character.';
     }
     return '';
   };
+
 
   const validate = () => {
     let isValid = true;
