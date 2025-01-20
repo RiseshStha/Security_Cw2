@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { loginUserApi } from "../../apis/Api";
+import React, { useState, useEffect } from "react";
+import { getCsrfTokenApi, loginUserApi } from "../../apis/Api";
 import { ToastContainer, toast } from "react-toastify";
 import { FaUser, FaLock, FaEye, FaEyeSlash } from "react-icons/fa";
 import "./login.css";
@@ -20,8 +20,24 @@ const Loginpage = () => {
 
   const [phoneNumberError, setPhoneNumberError] = useState("");
   const [passwordError, setPasswordError] = useState("");
-   const [captchaError, setCaptchaError] = useState("");
+  const [captchaError, setCaptchaError] = useState("");
 
+  //csrf 
+  const getCsrfToken = async () => {
+    try {
+        const response = await getCsrfTokenApi();
+        localStorage.setItem('csrfToken', response.data.csrfToken);
+        // console.log('CSRF Token:', response.data.csrfToken);
+        console.log(response.data.csrfToken)
+    } catch (error) {
+        console.error('Error fetching CSRF token:', error);
+    }
+  };
+  useEffect(() => {
+    getCsrfToken();
+}, []);
+  
+  
 
    const handleCaptchaChange = (value) => {
     setCaptchaValue(value);

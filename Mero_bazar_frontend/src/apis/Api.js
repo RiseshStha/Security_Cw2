@@ -1,12 +1,24 @@
 import axios from "axios";
 
+// const Api = axios.create({
+//     baseURL : "http://localhost:5000",
+//     withCredentials : true,
+//     headers : {
+//         "Content-Type" : "multipart/form-data"
+//     }
+// });
+
+const csrfToken = localStorage.getItem('csrfToken');
+
 const Api = axios.create({
     baseURL : "http://localhost:5000",
     withCredentials : true,
     headers : {
-        "Content-Type" : "multipart/form-data"
+        "Content-Type" : "multipart/form-data",
+        "X-CSRF-Token" : csrfToken,
     }
 });
+
 
 
 // const config = {
@@ -107,7 +119,6 @@ export const send = (data) => Api.post('api/message/send', data);
 export const getComment = (data) => Api.get('api/message/conversation', data)
 
 // Admin API endpoints
-// Admin API functions
 export const getAllUsersApi = async () => {
   try {
       const response = await Api.get(`api/user/get-users`);
@@ -136,3 +147,7 @@ export const checkAdminAuth = () => {
     isAdmin: user.isAdmin === true,
   };
 };
+
+
+//csrf
+export const getCsrfTokenApi = () => Api.get('/test');

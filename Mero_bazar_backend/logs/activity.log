@@ -24,3 +24,287 @@
 2025-01-20T10:17:24.863Z [INFO]: ::1 - - [20/Jan/2025:10:17:24 +0000] "GET /api/comment/get_comments/66bda79f1707c5c995252572 HTTP/1.1" 201 2208 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Edg/132.0.0.0"
 2025-01-20T10:17:24.865Z [INFO]: Comment route accessed
 2025-01-20T10:17:24.979Z [INFO]: ::1 - - [20/Jan/2025:10:17:24 +0000] "GET /api/comment/get_comments/66bda79f1707c5c995252572 HTTP/1.1" 201 2208 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Edg/132.0.0.0"
+2025-01-20T10:32:19.829Z [INFO]: ::1 - - [20/Jan/2025:10:32:19 +0000] "GET /products/ HTTP/1.1" 404 148 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Edg/132.0.0.0"
+2025-01-20T10:32:19.831Z [INFO]: ::1 - - [20/Jan/2025:10:32:19 +0000] "GET /profiles/undefined HTTP/1.1" 404 157 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Edg/132.0.0.0"
+2025-01-20T10:32:19.840Z [INFO]: Product route accessed
+2025-01-20T10:32:19.960Z [INFO]: ::1 - - [20/Jan/2025:10:32:19 +0000] "GET /api/product/get_product/66bda79f1707c5c995252572 HTTP/1.1" 201 443 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Edg/132.0.0.0"
+2025-01-20T10:32:19.962Z [INFO]: Product route accessed
+2025-01-20T10:32:19.979Z [INFO]: User route accessed
+2025-01-20T10:32:20.075Z [INFO]: ::1 - - [20/Jan/2025:10:32:20 +0000] "GET /api/product/get_product/66bda79f1707c5c995252572 HTTP/1.1" 201 443 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Edg/132.0.0.0"
+2025-01-20T10:32:20.077Z [INFO]: Product route accessed
+2025-01-20T10:32:20.091Z [INFO]: ::1 - - [20/Jan/2025:10:32:20 +0000] "GET /api/user/get_user/6673d5dd9dc6735f3bab3a19 HTTP/1.1" 201 398 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Edg/132.0.0.0"
+2025-01-20T10:32:20.190Z [INFO]: ::1 - - [20/Jan/2025:10:32:20 +0000] "GET /api/product/get_product/66bda79f1707c5c995252572 HTTP/1.1" 201 443 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Edg/132.0.0.0"
+2025-01-20T10:32:20.191Z [INFO]: Product route accessed
+2025-01-20T10:32:20.197Z [INFO]: Product route accessed
+2025-01-20T10:32:20.303Z [INFO]: ::1 - - [20/Jan/2025:10:32:20 +0000] "GET /api/product/get_product/66bda79f1707c5c995252572 HTTP/1.1" 201 443 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Edg/132.0.0.0"
+2025-01-20T10:32:20.354Z [INFO]: ::1 - - [20/Jan/2025:10:32:20 +0000] "GET /api/product/get_similar_products/vehicles HTTP/1.1" 201 1205 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Edg/132.0.0.0"
+2025-01-20T10:32:20.355Z [INFO]: Product route accessed
+2025-01-20T10:32:20.364Z [INFO]: Comment route accessed
+2025-01-20T10:32:20.468Z [INFO]: ::1 - - [20/Jan/2025:10:32:20 +0000] "GET /api/product/get_similar_products/vehicles HTTP/1.1" 201 1205 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Edg/132.0.0.0"
+2025-01-20T10:32:20.478Z [INFO]: ::1 - - [20/Jan/2025:10:32:20 +0000] "GET /api/comment/get_comments/66bda79f1707c5c995252572 HTTP/1.1" 201 2208 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Edg/132.0.0.0"
+2025-01-20T10:32:20.481Z [INFO]: Comment route accessed
+2025-01-20T10:32:20.594Z [INFO]: ::1 - - [20/Jan/2025:10:32:20 +0000] "GET /api/comment/get_comments/66bda79f1707c5c995252572 HTTP/1.1" 201 2208 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Edg/132.0.0.0"
+2025-01-20T10:32:21.406Z [INFO]: ::1 - - [20/Jan/2025:10:32:21 +0000] "GET /products/ HTTP/1.1" 404 148 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Edg/132.0.0.0"
+2025-01-20T10:32:21.407Z [INFO]: ::1 - - [20/Jan/2025:10:32:21 +0000] "GET /profiles/undefined HTTP/1.1" 404 157 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Edg/132.0.0.0"
+2025-01-20T10:32:21.414Z [INFO]: Product route accessed
+2025-01-20T10:32:21.527Z [INFO]: ::1 - - [20/Jan/2025:10:32:21 +0000] "GET /api/product/get_product/66bda79f1707c5c995252572 HTTP/1.1" 201 443 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Edg/132.0.0.0"
+2025-01-20T10:32:21.528Z [INFO]: Product route accessed
+2025-01-20T10:32:21.538Z [INFO]: User route accessed
+2025-01-20T10:32:21.682Z [INFO]: ::1 - - [20/Jan/2025:10:32:21 +0000] "GET /api/product/get_product/66bda79f1707c5c995252572 HTTP/1.1" 201 443 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Edg/132.0.0.0"
+2025-01-20T10:32:21.683Z [INFO]: Product route accessed
+2025-01-20T10:32:21.689Z [INFO]: ::1 - - [20/Jan/2025:10:32:21 +0000] "GET /api/user/get_user/6673d5dd9dc6735f3bab3a19 HTTP/1.1" 201 398 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Edg/132.0.0.0"
+2025-01-20T10:32:21.795Z [INFO]: ::1 - - [20/Jan/2025:10:32:21 +0000] "GET /api/product/get_product/66bda79f1707c5c995252572 HTTP/1.1" 201 443 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Edg/132.0.0.0"
+2025-01-20T10:32:21.796Z [INFO]: Product route accessed
+2025-01-20T10:32:21.800Z [INFO]: Product route accessed
+2025-01-20T10:32:21.907Z [INFO]: ::1 - - [20/Jan/2025:10:32:21 +0000] "GET /api/product/get_product/66bda79f1707c5c995252572 HTTP/1.1" 201 443 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Edg/132.0.0.0"
+2025-01-20T10:32:21.913Z [INFO]: ::1 - - [20/Jan/2025:10:32:21 +0000] "GET /api/product/get_similar_products/vehicles HTTP/1.1" 201 1205 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Edg/132.0.0.0"
+2025-01-20T10:32:21.920Z [INFO]: Product route accessed
+2025-01-20T10:32:21.926Z [INFO]: Comment route accessed
+2025-01-20T10:32:22.043Z [INFO]: ::1 - - [20/Jan/2025:10:32:22 +0000] "GET /api/product/get_similar_products/vehicles HTTP/1.1" 201 1205 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Edg/132.0.0.0"
+2025-01-20T10:32:22.046Z [INFO]: ::1 - - [20/Jan/2025:10:32:22 +0000] "GET /api/comment/get_comments/66bda79f1707c5c995252572 HTTP/1.1" 201 2208 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Edg/132.0.0.0"
+2025-01-20T10:32:22.053Z [INFO]: Comment route accessed
+2025-01-20T10:32:22.199Z [INFO]: ::1 - - [20/Jan/2025:10:32:22 +0000] "GET /api/comment/get_comments/66bda79f1707c5c995252572 HTTP/1.1" 201 2208 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Edg/132.0.0.0"
+2025-01-20T10:57:10.486Z [INFO]: Product route accessed
+2025-01-20T10:57:10.698Z [INFO]: ::1 - - [20/Jan/2025:10:57:10 +0000] "GET /api/product/pagination?_page=1&category= HTTP/1.1" 201 1613 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Edg/132.0.0.0"
+2025-01-20T10:57:10.700Z [INFO]: Product route accessed
+2025-01-20T10:57:10.903Z [INFO]: ::1 - - [20/Jan/2025:10:57:10 +0000] "GET /api/product/pagination?_page=1&category= HTTP/1.1" 201 1613 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Edg/132.0.0.0"
+2025-01-20T10:57:11.650Z [INFO]: ::1 - - [20/Jan/2025:10:57:11 +0000] "GET /products/ HTTP/1.1" 404 148 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Edg/132.0.0.0"
+2025-01-20T10:57:11.656Z [INFO]: ::1 - - [20/Jan/2025:10:57:11 +0000] "GET /profiles/undefined HTTP/1.1" 404 157 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Edg/132.0.0.0"
+2025-01-20T10:57:11.661Z [INFO]: Product route accessed
+2025-01-20T10:57:11.763Z [INFO]: ::1 - - [20/Jan/2025:10:57:11 +0000] "GET /api/product/get_product/6670266a4feb3c34fea8727c HTTP/1.1" 201 434 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Edg/132.0.0.0"
+2025-01-20T10:57:11.765Z [INFO]: Product route accessed
+2025-01-20T10:57:11.773Z [INFO]: User route accessed
+2025-01-20T10:57:11.865Z [INFO]: ::1 - - [20/Jan/2025:10:57:11 +0000] "GET /api/product/get_product/6670266a4feb3c34fea8727c HTTP/1.1" 201 434 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Edg/132.0.0.0"
+2025-01-20T10:57:11.867Z [INFO]: Product route accessed
+2025-01-20T10:57:11.874Z [INFO]: ::1 - - [20/Jan/2025:10:57:11 +0000] "GET /api/user/get_user/66740d8f19cf97b8b0bca0cd HTTP/1.1" 201 386 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Edg/132.0.0.0"
+2025-01-20T10:57:11.967Z [INFO]: ::1 - - [20/Jan/2025:10:57:11 +0000] "GET /api/product/get_product/6670266a4feb3c34fea8727c HTTP/1.1" 201 434 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Edg/132.0.0.0"
+2025-01-20T10:57:11.968Z [INFO]: Product route accessed
+2025-01-20T10:57:11.974Z [INFO]: Product route accessed
+2025-01-20T10:57:12.069Z [INFO]: ::1 - - [20/Jan/2025:10:57:12 +0000] "GET /api/product/get_product/6670266a4feb3c34fea8727c HTTP/1.1" 201 434 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Edg/132.0.0.0"
+2025-01-20T10:57:12.080Z [INFO]: ::1 - - [20/Jan/2025:10:57:12 +0000] "GET /api/product/get_similar_products/vehicles HTTP/1.1" 201 1205 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Edg/132.0.0.0"
+2025-01-20T10:57:12.081Z [INFO]: Product route accessed
+2025-01-20T10:57:12.099Z [INFO]: Comment route accessed
+2025-01-20T10:57:12.234Z [INFO]: ::1 - - [20/Jan/2025:10:57:12 +0000] "GET /api/product/get_similar_products/vehicles HTTP/1.1" 201 1205 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Edg/132.0.0.0"
+2025-01-20T10:57:12.236Z [INFO]: ::1 - - [20/Jan/2025:10:57:12 +0000] "GET /api/comment/get_comments/6670266a4feb3c34fea8727c HTTP/1.1" 201 694 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Edg/132.0.0.0"
+2025-01-20T10:57:12.244Z [INFO]: Comment route accessed
+2025-01-20T10:57:12.345Z [INFO]: ::1 - - [20/Jan/2025:10:57:12 +0000] "GET /api/comment/get_comments/6670266a4feb3c34fea8727c HTTP/1.1" 201 694 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Edg/132.0.0.0"
+2025-01-20T10:58:01.752Z [INFO]: ::1 - - [20/Jan/2025:10:58:01 +0000] "GET /products/ HTTP/1.1" 404 148 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Edg/132.0.0.0"
+2025-01-20T10:58:01.762Z [INFO]: ::1 - - [20/Jan/2025:10:58:01 +0000] "GET /profiles/undefined HTTP/1.1" 404 157 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Edg/132.0.0.0"
+2025-01-20T10:58:01.767Z [INFO]: Product route accessed
+2025-01-20T10:58:01.895Z [INFO]: ::1 - - [20/Jan/2025:10:58:01 +0000] "GET /api/product/get_product/6670266a4feb3c34fea8727c HTTP/1.1" 201 434 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Edg/132.0.0.0"
+2025-01-20T10:58:01.898Z [INFO]: Product route accessed
+2025-01-20T10:58:01.927Z [INFO]: User route accessed
+2025-01-20T10:58:01.999Z [INFO]: ::1 - - [20/Jan/2025:10:58:01 +0000] "GET /api/product/get_product/6670266a4feb3c34fea8727c HTTP/1.1" 201 434 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Edg/132.0.0.0"
+2025-01-20T10:58:02.002Z [INFO]: Product route accessed
+2025-01-20T10:58:02.028Z [INFO]: ::1 - - [20/Jan/2025:10:58:02 +0000] "GET /api/user/get_user/66740d8f19cf97b8b0bca0cd HTTP/1.1" 201 386 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Edg/132.0.0.0"
+2025-01-20T10:58:02.106Z [INFO]: ::1 - - [20/Jan/2025:10:58:02 +0000] "GET /api/product/get_product/6670266a4feb3c34fea8727c HTTP/1.1" 201 434 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Edg/132.0.0.0"
+2025-01-20T10:58:02.107Z [INFO]: Product route accessed
+2025-01-20T10:58:02.117Z [INFO]: Product route accessed
+2025-01-20T10:58:02.210Z [INFO]: ::1 - - [20/Jan/2025:10:58:02 +0000] "GET /api/product/get_product/6670266a4feb3c34fea8727c HTTP/1.1" 201 434 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Edg/132.0.0.0"
+2025-01-20T10:58:02.219Z [INFO]: ::1 - - [20/Jan/2025:10:58:02 +0000] "GET /api/product/get_similar_products/vehicles HTTP/1.1" 201 1205 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Edg/132.0.0.0"
+2025-01-20T10:58:02.221Z [INFO]: Product route accessed
+2025-01-20T10:58:02.237Z [INFO]: Comment route accessed
+2025-01-20T10:58:02.325Z [INFO]: ::1 - - [20/Jan/2025:10:58:02 +0000] "GET /api/product/get_similar_products/vehicles HTTP/1.1" 201 1205 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Edg/132.0.0.0"
+2025-01-20T10:58:02.340Z [INFO]: ::1 - - [20/Jan/2025:10:58:02 +0000] "GET /api/comment/get_comments/6670266a4feb3c34fea8727c HTTP/1.1" 201 694 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Edg/132.0.0.0"
+2025-01-20T10:58:02.342Z [INFO]: Comment route accessed
+2025-01-20T10:58:02.465Z [INFO]: ::1 - - [20/Jan/2025:10:58:02 +0000] "GET /api/comment/get_comments/6670266a4feb3c34fea8727c HTTP/1.1" 201 694 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Edg/132.0.0.0"
+2025-01-20T12:45:09.502Z [INFO]: Product route accessed
+2025-01-20T12:45:09.720Z [INFO]: ::1 - - [20/Jan/2025:12:45:09 +0000] "GET /api/product/pagination?_page=1&category= HTTP/1.1" 201 1613 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Edg/132.0.0.0"
+2025-01-20T12:45:09.723Z [INFO]: Product route accessed
+2025-01-20T12:45:09.925Z [INFO]: ::1 - - [20/Jan/2025:12:45:09 +0000] "GET /api/product/pagination?_page=1&category= HTTP/1.1" 201 1613 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Edg/132.0.0.0"
+2025-01-20T12:45:25.479Z [INFO]: User route accessed
+2025-01-20T12:45:25.800Z [INFO]: ::1 - - [20/Jan/2025:12:45:25 +0000] "POST /api/user/login HTTP/1.1" 200 477 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Edg/132.0.0.0"
+2025-01-20T12:45:25.852Z [INFO]: Product route accessed
+2025-01-20T12:45:26.106Z [INFO]: ::1 - - [20/Jan/2025:12:45:26 +0000] "GET /api/product/pagination?_page=1&category= HTTP/1.1" 201 1613 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Edg/132.0.0.0"
+2025-01-20T12:45:26.108Z [INFO]: Product route accessed
+2025-01-20T12:45:26.310Z [INFO]: ::1 - - [20/Jan/2025:12:45:26 +0000] "GET /api/product/pagination?_page=1&category= HTTP/1.1" 201 1613 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Edg/132.0.0.0"
+2025-01-20T12:46:32.129Z [INFO]: Starting the server...
+2025-01-20T12:46:32.260Z [INFO]: Server is running on port 5000
+2025-01-20T12:46:33.781Z [INFO]: Connected to MongoDB successfully
+2025-01-20T12:46:45.288Z [INFO]: Starting the server...
+2025-01-20T12:46:45.402Z [INFO]: Server is running on port 5000
+2025-01-20T12:46:47.264Z [INFO]: Starting the server...
+2025-01-20T12:46:47.431Z [INFO]: Server is running on port 5000
+2025-01-20T12:46:49.064Z [INFO]: Connected to MongoDB successfully
+2025-01-20T12:49:51.938Z [INFO]: Starting the server...
+2025-01-20T12:49:52.055Z [INFO]: Server is running on port 5000
+2025-01-20T12:49:53.373Z [INFO]: Connected to MongoDB successfully
+2025-01-20T12:49:58.349Z [INFO]: Starting the server...
+2025-01-20T12:49:58.478Z [INFO]: Server is running on port 5000
+2025-01-20T12:49:59.540Z [INFO]: Connected to MongoDB successfully
+2025-01-20T12:50:18.408Z [INFO]: Starting the server...
+2025-01-20T12:50:18.527Z [INFO]: Server is running on port 5000
+2025-01-20T12:50:19.590Z [INFO]: Connected to MongoDB successfully
+2025-01-20T12:52:47.083Z [INFO]: Product route accessed
+2025-01-20T12:52:47.392Z [INFO]: ::1 - - [20/Jan/2025:12:52:47 +0000] "GET /api/product/pagination?_page=1&category= HTTP/1.1" 201 1613 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Edg/132.0.0.0"
+2025-01-20T12:52:47.394Z [INFO]: Product route accessed
+2025-01-20T12:52:47.601Z [INFO]: ::1 - - [20/Jan/2025:12:52:47 +0000] "GET /api/product/pagination?_page=1&category= HTTP/1.1" 201 1613 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Edg/132.0.0.0"
+2025-01-20T12:56:28.414Z [INFO]: Starting the server...
+2025-01-20T12:56:28.532Z [INFO]: Server is running on port 5000
+2025-01-20T12:56:29.691Z [INFO]: Connected to MongoDB successfully
+2025-01-20T12:56:33.886Z [INFO]: Starting the server...
+2025-01-20T12:56:34.002Z [INFO]: Server is running on port 5000
+2025-01-20T12:56:35.094Z [INFO]: Connected to MongoDB successfully
+2025-01-20T12:56:35.599Z [INFO]: Starting the server...
+2025-01-20T12:56:35.712Z [INFO]: Server is running on port 5000
+2025-01-20T12:56:36.775Z [INFO]: Connected to MongoDB successfully
+2025-01-20T12:56:37.345Z [INFO]: Starting the server...
+2025-01-20T12:56:37.458Z [INFO]: Server is running on port 5000
+2025-01-20T12:56:38.575Z [INFO]: Connected to MongoDB successfully
+2025-01-20T13:08:03.707Z [INFO]: Starting the server...
+2025-01-20T13:08:03.829Z [INFO]: Server is running on port 5000
+2025-01-20T13:08:05.089Z [INFO]: Connected to MongoDB successfully
+2025-01-20T13:08:06.745Z [INFO]: Starting the server...
+2025-01-20T13:08:06.890Z [INFO]: Server is running on port 5000
+2025-01-20T13:08:07.980Z [INFO]: Connected to MongoDB successfully
+2025-01-20T13:08:10.320Z [INFO]: Starting the server...
+2025-01-20T13:08:10.471Z [INFO]: Server is running on port 5000
+2025-01-20T13:08:11.561Z [INFO]: Connected to MongoDB successfully
+2025-01-20T13:08:31.428Z [ERROR]: Error: misconfigured csrf
+2025-01-20T13:08:31.434Z [INFO]: ::1 - - [20/Jan/2025:13:08:31 +0000] "POST /api/user/login HTTP/1.1" 500 33 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Edg/132.0.0.0"
+2025-01-20T13:13:46.047Z [ERROR]: Error: misconfigured csrf
+2025-01-20T13:13:46.049Z [INFO]: ::1 - - [20/Jan/2025:13:13:46 +0000] "POST /api/user/login HTTP/1.1" 500 33 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Edg/132.0.0.0"
+2025-01-20T13:19:17.700Z [INFO]: Starting the server...
+2025-01-20T13:19:17.826Z [INFO]: Server is running on port 5000
+2025-01-20T13:19:19.013Z [INFO]: Connected to MongoDB successfully
+2025-01-20T13:19:20.972Z [INFO]: Starting the server...
+2025-01-20T13:19:21.093Z [INFO]: Server is running on port 5000
+2025-01-20T13:19:22.185Z [INFO]: Connected to MongoDB successfully
+2025-01-20T13:19:23.956Z [INFO]: Starting the server...
+2025-01-20T13:19:24.069Z [INFO]: Server is running on port 5000
+2025-01-20T13:19:25.153Z [INFO]: Connected to MongoDB successfully
+2025-01-20T13:19:40.503Z [INFO]: Starting the server...
+2025-01-20T13:19:40.615Z [INFO]: Server is running on port 5000
+2025-01-20T13:19:41.809Z [INFO]: Connected to MongoDB successfully
+2025-01-20T13:19:46.807Z [INFO]: Starting the server...
+2025-01-20T13:19:46.929Z [INFO]: Server is running on port 5000
+2025-01-20T13:19:48.055Z [INFO]: Connected to MongoDB successfully
+2025-01-20T13:21:44.474Z [INFO]: Starting the server...
+2025-01-20T13:21:44.597Z [INFO]: Server is running on port 5000
+2025-01-20T13:21:45.747Z [INFO]: Connected to MongoDB successfully
+2025-01-20T13:21:53.395Z [INFO]: Starting the server...
+2025-01-20T13:21:53.514Z [INFO]: Server is running on port 5000
+2025-01-20T13:21:54.627Z [INFO]: Connected to MongoDB successfully
+2025-01-20T13:57:39.205Z [ERROR]: Error: misconfigured csrf
+2025-01-20T13:57:39.209Z [INFO]: ::1 - - [20/Jan/2025:13:57:39 +0000] "POST /api/user/login HTTP/1.1" 500 33 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+2025-01-20T14:00:41.983Z [INFO]: Starting the server...
+2025-01-20T14:00:42.123Z [INFO]: Server is running on port 5000
+2025-01-20T14:00:43.420Z [INFO]: Connected to MongoDB successfully
+2025-01-20T14:01:06.791Z [INFO]: Starting the server...
+2025-01-20T14:01:06.903Z [INFO]: Server is running on port 5000
+2025-01-20T14:01:08.007Z [INFO]: Connected to MongoDB successfully
+2025-01-20T14:01:10.320Z [INFO]: Starting the server...
+2025-01-20T14:01:10.440Z [INFO]: Server is running on port 5000
+2025-01-20T14:01:11.517Z [INFO]: Connected to MongoDB successfully
+2025-01-20T14:02:53.180Z [INFO]: Starting the server...
+2025-01-20T14:02:53.292Z [INFO]: Server is running on port 5000
+2025-01-20T14:02:54.606Z [INFO]: Connected to MongoDB successfully
+2025-01-20T14:02:55.967Z [INFO]: Starting the server...
+2025-01-20T14:02:56.084Z [INFO]: Server is running on port 5000
+2025-01-20T14:02:57.181Z [INFO]: Connected to MongoDB successfully
+2025-01-20T14:02:58.467Z [INFO]: Starting the server...
+2025-01-20T14:02:58.582Z [INFO]: Server is running on port 5000
+2025-01-20T14:02:59.727Z [INFO]: Connected to MongoDB successfully
+2025-01-20T14:11:18.737Z [ERROR]: Error: invalid csrf token
+2025-01-20T14:11:18.741Z [INFO]: ::1 - - [20/Jan/2025:14:11:18 +0000] "POST /api/user/login HTTP/1.1" 500 33 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+2025-01-20T14:15:13.096Z [INFO]: Starting the server...
+2025-01-20T14:15:13.211Z [INFO]: Server is running on port 5000
+2025-01-20T14:15:14.455Z [INFO]: Connected to MongoDB successfully
+2025-01-20T14:15:23.960Z [INFO]: Starting the server...
+2025-01-20T14:15:24.077Z [INFO]: Server is running on port 5000
+2025-01-20T14:15:25.140Z [INFO]: Connected to MongoDB successfully
+2025-01-20T14:15:48.198Z [ERROR]: Error: invalid csrf token
+2025-01-20T14:15:48.203Z [INFO]: ::1 - - [20/Jan/2025:14:15:48 +0000] "POST /api/user/login HTTP/1.1" 500 33 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+2025-01-20T14:17:14.029Z [INFO]: Starting the server...
+2025-01-20T14:17:14.141Z [INFO]: Server is running on port 5000
+2025-01-20T14:17:15.391Z [INFO]: Connected to MongoDB successfully
+2025-01-20T14:17:20.415Z [INFO]: Starting the server...
+2025-01-20T14:17:20.530Z [INFO]: Server is running on port 5000
+2025-01-20T14:17:21.932Z [INFO]: Starting the server...
+2025-01-20T14:17:22.047Z [INFO]: Server is running on port 5000
+2025-01-20T14:17:23.114Z [INFO]: Connected to MongoDB successfully
+2025-01-20T14:17:25.339Z [INFO]: Starting the server...
+2025-01-20T14:17:25.455Z [INFO]: Server is running on port 5000
+2025-01-20T14:17:26.562Z [INFO]: Connected to MongoDB successfully
+2025-01-20T14:17:28.135Z [INFO]: Starting the server...
+2025-01-20T14:17:28.258Z [INFO]: Server is running on port 5000
+2025-01-20T14:17:29.342Z [INFO]: Connected to MongoDB successfully
+2025-01-20T14:17:30.383Z [INFO]: Starting the server...
+2025-01-20T14:17:30.497Z [INFO]: Server is running on port 5000
+2025-01-20T14:17:31.572Z [INFO]: Connected to MongoDB successfully
+2025-01-20T14:17:42.779Z [INFO]: Starting the server...
+2025-01-20T14:17:42.891Z [INFO]: Server is running on port 5000
+2025-01-20T14:17:43.961Z [INFO]: Connected to MongoDB successfully
+2025-01-20T14:17:45.239Z [INFO]: Starting the server...
+2025-01-20T14:17:45.352Z [INFO]: Server is running on port 5000
+2025-01-20T14:17:46.418Z [INFO]: Connected to MongoDB successfully
+2025-01-20T14:17:50.241Z [INFO]: Starting the server...
+2025-01-20T14:17:50.364Z [INFO]: Server is running on port 5000
+2025-01-20T14:17:53.863Z [INFO]: Starting the server...
+2025-01-20T14:17:53.975Z [INFO]: Server is running on port 5000
+2025-01-20T14:17:55.050Z [INFO]: Connected to MongoDB successfully
+2025-01-20T14:17:57.566Z [INFO]: Starting the server...
+2025-01-20T14:17:57.679Z [INFO]: Server is running on port 5000
+2025-01-20T14:17:58.753Z [INFO]: Connected to MongoDB successfully
+2025-01-20T14:18:49.616Z [INFO]: Starting the server...
+2025-01-20T14:18:49.730Z [INFO]: Server is running on port 5000
+2025-01-20T14:18:50.829Z [INFO]: Connected to MongoDB successfully
+2025-01-20T14:19:35.598Z [INFO]: Starting the server...
+2025-01-20T14:19:35.715Z [INFO]: Server is running on port 5000
+2025-01-20T14:19:35.715Z [INFO]: Server is running on port 5000
+2025-01-20T14:19:36.807Z [INFO]: Connected to MongoDB successfully
+2025-01-20T14:20:09.809Z [INFO]: Starting the server...
+2025-01-20T14:20:09.935Z [INFO]: Server is running on port 5000
+2025-01-20T14:20:11.036Z [INFO]: Connected to MongoDB successfully
+2025-01-20T14:23:20.065Z [INFO]: Starting the server...
+2025-01-20T14:23:20.182Z [INFO]: Server is running on port 5000
+2025-01-20T14:23:21.375Z [INFO]: Starting the server...
+2025-01-20T14:23:21.490Z [INFO]: Server is running on port 5000
+2025-01-20T14:23:22.612Z [INFO]: Connected to MongoDB successfully
+2025-01-20T14:28:13.358Z [INFO]: Starting the server...
+2025-01-20T14:28:13.476Z [INFO]: Server is running on port 5000
+2025-01-20T14:28:14.650Z [INFO]: Connected to MongoDB successfully
+2025-01-20T14:29:38.606Z [ERROR]: Error: invalid csrf token
+2025-01-20T14:29:38.610Z [INFO]: ::1 - - [20/Jan/2025:14:29:38 +0000] "POST /api/user/login HTTP/1.1" 500 33 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+2025-01-20T14:41:37.868Z [INFO]: Test endpoint accessed
+2025-01-20T14:41:37.869Z [INFO]: ::1 - - [20/Jan/2025:14:41:37 +0000] "GET /test HTTP/1.1" 200 85 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+2025-01-20T14:41:47.933Z [INFO]: Test endpoint accessed
+2025-01-20T14:41:47.935Z [INFO]: ::1 - - [20/Jan/2025:14:41:47 +0000] "GET /test HTTP/1.1" 200 85 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+2025-01-20T14:41:47.941Z [INFO]: Test endpoint accessed
+2025-01-20T14:41:47.943Z [INFO]: ::1 - - [20/Jan/2025:14:41:47 +0000] "GET /test HTTP/1.1" 200 85 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+2025-01-20T14:42:46.866Z [INFO]: Test endpoint accessed
+2025-01-20T14:42:46.868Z [INFO]: ::1 - - [20/Jan/2025:14:42:46 +0000] "GET /test HTTP/1.1" 200 85 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+2025-01-20T14:43:04.899Z [INFO]: Test endpoint accessed
+2025-01-20T14:43:04.900Z [INFO]: ::1 - - [20/Jan/2025:14:43:04 +0000] "GET /test HTTP/1.1" 200 85 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+2025-01-20T14:43:04.902Z [INFO]: Test endpoint accessed
+2025-01-20T14:43:04.903Z [INFO]: ::1 - - [20/Jan/2025:14:43:04 +0000] "GET /test HTTP/1.1" 200 85 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+2025-01-20T14:43:19.178Z [ERROR]: Error: invalid csrf token
+2025-01-20T14:43:19.179Z [INFO]: ::1 - - [20/Jan/2025:14:43:19 +0000] "POST /api/user/login HTTP/1.1" 500 33 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+2025-01-20T14:44:57.854Z [INFO]: Test endpoint accessed
+2025-01-20T14:44:57.856Z [INFO]: ::1 - - [20/Jan/2025:14:44:57 +0000] "GET /test HTTP/1.1" 200 85 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+2025-01-20T14:44:58.866Z [INFO]: Test endpoint accessed
+2025-01-20T14:44:58.867Z [INFO]: ::1 - - [20/Jan/2025:14:44:58 +0000] "GET /test HTTP/1.1" 200 85 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+2025-01-20T14:45:00.851Z [INFO]: Test endpoint accessed
+2025-01-20T14:45:00.852Z [INFO]: ::1 - - [20/Jan/2025:14:45:00 +0000] "GET /test HTTP/1.1" 200 85 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+2025-01-20T14:45:13.862Z [INFO]: Test endpoint accessed
+2025-01-20T14:45:13.863Z [INFO]: ::1 - - [20/Jan/2025:14:45:13 +0000] "GET /test HTTP/1.1" 200 85 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+2025-01-20T14:45:17.561Z [INFO]: Test endpoint accessed
+2025-01-20T14:45:17.562Z [INFO]: ::1 - - [20/Jan/2025:14:45:17 +0000] "GET /test HTTP/1.1" 200 85 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+2025-01-20T14:45:17.564Z [INFO]: Test endpoint accessed
+2025-01-20T14:45:17.566Z [INFO]: ::1 - - [20/Jan/2025:14:45:17 +0000] "GET /test HTTP/1.1" 200 85 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+2025-01-20T14:45:39.201Z [ERROR]: Error: invalid csrf token
+2025-01-20T14:45:39.202Z [INFO]: ::1 - - [20/Jan/2025:14:45:39 +0000] "POST /api/user/login HTTP/1.1" 500 33 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+2025-01-20T14:47:33.456Z [ERROR]: Error: invalid csrf token
+2025-01-20T14:47:33.456Z [INFO]: ::1 - - [20/Jan/2025:14:47:33 +0000] "POST /api/user/login HTTP/1.1" 500 33 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+2025-01-20T14:50:23.854Z [INFO]: Test endpoint accessed
+2025-01-20T14:50:23.855Z [INFO]: ::1 - - [20/Jan/2025:14:50:23 +0000] "GET /test HTTP/1.1" 200 85 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+2025-01-20T14:50:32.837Z [INFO]: Test endpoint accessed
+2025-01-20T14:50:32.839Z [INFO]: ::1 - - [20/Jan/2025:14:50:32 +0000] "GET /test HTTP/1.1" 200 85 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+2025-01-20T14:50:32.843Z [INFO]: Test endpoint accessed
+2025-01-20T14:50:32.845Z [INFO]: ::1 - - [20/Jan/2025:14:50:32 +0000] "GET /test HTTP/1.1" 200 85 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+2025-01-20T14:50:44.969Z [INFO]: User route accessed
+2025-01-20T14:50:45.323Z [INFO]: ::1 - - [20/Jan/2025:14:50:45 +0000] "POST /api/user/login HTTP/1.1" 200 477 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+2025-01-20T14:50:45.371Z [INFO]: Product route accessed
+2025-01-20T14:50:45.634Z [INFO]: ::1 - - [20/Jan/2025:14:50:45 +0000] "GET /api/product/pagination?_page=1&category= HTTP/1.1" 201 1598 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+2025-01-20T14:50:45.635Z [INFO]: Product route accessed
+2025-01-20T14:50:45.837Z [INFO]: ::1 - - [20/Jan/2025:14:50:45 +0000] "GET /api/product/pagination?_page=1&category= HTTP/1.1" 201 1598 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"

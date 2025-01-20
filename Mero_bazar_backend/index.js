@@ -69,6 +69,9 @@ const xss = require('xss-clean');
 const mongoSanitize = require('express-mongo-sanitize');
 const logger = require('./service/logger'); // Import logger
 const morgan = require('morgan');
+const csrf = require('csurf');
+const bodyParser = require('body-parser');
+const cookieParser = require('cookie-parser');
 
 const app = express();
 
@@ -90,6 +93,12 @@ app.use(xss());
 // To sanitize data from NoSQL injection
 app.use(mongoSanitize());
 
+// Enabling cookies for CSRF token
+app.use(cookieParser());
+
+
+
+
 // CORS configuration
 const corsOptions = {
     origin: true,
@@ -97,6 +106,11 @@ const corsOptions = {
     optionSuccessStatus: 200,
 };
 app.use(cors(corsOptions));
+
+// CSRF protection middleware with cookie enabled
+const csrfProtection = csrf({ cookie: true });
+
+app.use(express.urlencoded({extended: false}));
 
 // Log HTTP requests using Morgan and Winston
 app.use(morgan('combined', {
@@ -122,13 +136,18 @@ app.listen(PORT, () => {
 });
 
 // Creating test endpoint
-app.get('/test', (req, res) => {
+app.get('/test', csrfProtection,(req, res) => {
     logger.info('Test endpoint accessed');
-    res.send('Test API is Working!...');
+    res.cookie('csrfToken', req.csrfToken(), { httpOnly: true, secure: false });
+    // res.send('Test API is Working!...');
+    res.json({
+        message: 'Test API is Working!',
+        csrfToken: req.csrfToken()
+    })
 });
 
 // API endpoints with logging
-app.use('/api/user', (req, res, next) => { logger.info("User route accessed"); next(); }, require('./routes/userRoutes'));
+app.use('/api/user', csrfProtection, (req, res, next) => { logger.info("User route accessed"); next(); }, require('./routes/userRoutes'));
 app.use('/api/product', (req, res, next) => { logger.info("Product route accessed"); next(); }, require('./routes/productRoutes'));
 app.use('/api/comment', (req, res, next) => { logger.info("Comment route accessed"); next(); }, require('./routes/commentRoutes'));
 app.use('/api/message', (req, res, next) => { logger.info("Message route accessed"); next(); }, require('./routes/messageRoutes'));
