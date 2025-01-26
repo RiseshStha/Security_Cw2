@@ -180,7 +180,7 @@ const Homepage = () => {
                       <div className="product-card ps-2">
                         <p className="condition">{product.condition}</p>
                         <img
-                          src={`http://localhost:5000/products/${product.productImage}`}
+                          src={`https://localhost:5000/products/${product.productImage}`}
                           alt={product.productTitle}
                           className="img-fluid"
                         />
@@ -202,7 +202,7 @@ const Homepage = () => {
                       <div className="product-card ps-2">
                         <p className="condition">{product.condition}</p>
                         <img
-                          src={`http://localhost:5000/products/${product.productImage}`}
+                          src={`https://localhost:5000/products/${product.productImage}`}
                           alt={product.productTitle}
                           className="img-fluid"
                         />

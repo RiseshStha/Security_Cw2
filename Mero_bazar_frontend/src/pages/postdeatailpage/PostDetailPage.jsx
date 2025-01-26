@@ -165,7 +165,7 @@ const PostDetailPage = () => {
         return (
           <div key={comment._id} className={`mt-3 post-detail-comment-container ${isReply ? 'reply' : ''}`}>
             <div className="comment">
-              <img src={`http://localhost:5000/profiles/${comment.userImage}`} className="comment-avatar" alt="Profile" />
+              <img src={`https://localhost:5000/profiles/${comment.userImage}`} className="comment-avatar" alt="Profile" />
               <div className="comment-body">
                 <div className="comment-header">
                   <span className="comment-username">{comment.authorName}</span>
@@ -222,14 +222,14 @@ const PostDetailPage = () => {
         <div className="col-lg-8">
           <div className="row">
             <div className="col-md-6 bd-highlight border-end border-2">
-              <img src={`http://localhost:5000/products/${productImage}`} alt="Product" className="product-image" />
+              <img src={`https://localhost:5000/products/${productImage}`} alt="Product" className="product-image" />
               <div className="product-info ms-3">
                 <p>Rs <strong>{productPrice}</strong></p>
                 <p>{productCreatedAt}</p>
               </div>
               <div className="contact-info mb-4">
                 <div className="d-flex align-items-center mb-3 ms-3">
-                  <img src={`http://localhost:5000/profiles/${userDetail.profileImage}`} alt="Seller Image" className="rounded-circle me-2" style={{ width: 50, height: 50 }} />
+                  <img src={`https://localhost:5000/profiles/${userDetail.profileImage}`} alt="Seller Image" className="rounded-circle me-2" style={{ width: 50, height: 50 }} />
                   <div>
                     <p className="mb-0 ms-3">{userDetail.fullName}</p>
                     <p className="mb-0 ms-3">{userDetail.phoneNumber}</p>
@@ -289,7 +289,7 @@ const PostDetailPage = () => {
           <div className="similar-products-details d-flex flex-column justify-content-center align-items-center">
             {similarProducts.map((singleProduct) => (
                 <Link to={`/post_detail/${singleProduct._id}`} key={singleProduct._id} className="mb-3 shadow p-2 mb-2 bg-light text-dark rounded-4 similar-product ms-3">
-                <img src={`http://localhost:5000/products/${singleProduct.productImage}`} alt="image" className="img-fluid" />
+                <img src={`https://localhost:5000/products/${singleProduct.productImage}`} alt="image" className="img-fluid" />
                 <p className="ms-3">{singleProduct.postTitle}</p>
                 <p className="ms-3">Rs.{singleProduct.price}</p>
                 <p className="me-3 text-end">{singleProduct.condition}</p>

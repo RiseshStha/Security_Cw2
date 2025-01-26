@@ -11,10 +11,6 @@ const AdminDashboard = () => {
   const [loading, setLoading] = useState(true);
   const [activeTab, setActiveTab] = useState("users");
 
-  useEffect(() => {
-    checkAdminAuth();
-    fetchUsers();
-  }, []);
 
   const checkAdminAuth = () => {
     const token = localStorage.getItem("token");
@@ -24,6 +20,12 @@ const AdminDashboard = () => {
       navigate("/admin/login");
     }
   };
+
+  useEffect(() => {
+    checkAdminAuth();
+    fetchUsers();
+  }, []);
+
 
   const fetchUsers = async () => {
     try {
@@ -52,11 +54,12 @@ const AdminDashboard = () => {
   const handleToggleBlock = async (userId) => {
     try {
       const response = await toggleUserBlockApi(userId);
-      if (response.data.success) {
+      if (response?.data?.success) {
         toast.success(response.data.message);
         fetchUsers();
       } else {
         toast.error(response.data.message);
+        console.warn('Unexpected response structure:', response);
       }
     } catch (error) {
       console.error("Error toggling user block:", error);

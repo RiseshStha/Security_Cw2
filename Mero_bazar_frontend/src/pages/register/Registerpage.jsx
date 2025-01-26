@@ -1,6 +1,6 @@
 // Registerpage.jsx
-import React, { useState } from "react";
-import { registerUserApi } from "../../apis/Api";
+import React, { useState, useEffect } from "react";
+import { getCsrfTokenApi, registerUserApi } from "../../apis/Api";
 import "toastify-js/src/toastify.css";
 import { ToastContainer, toast } from "react-toastify";
 import { useNavigate } from 'react-router-dom';
@@ -127,6 +127,21 @@ const Registerpage = () => {
   const [confirmPasswordError, setConfirmPasswordError] = useState("");
   const [captchaError, setCaptchaError] = useState("");
 
+   //csrf 
+    const getCsrfToken = async () => {
+      try {
+          const response = await getCsrfTokenApi();
+          localStorage.setItem('csrfToken', response.data.csrfToken);
+          // console.log('CSRF Token:', response.data.csrfToken);
+          console.log(response.data.csrfToken)
+      } catch (error) {
+          console.error('Error fetching CSRF token:', error);
+      }
+    };
+    useEffect(() => {
+      getCsrfToken();
+  }, []);
+
   const handleCaptchaChange = (value) => {
     setCaptchaValue(value);
     setCaptchaError("");
@@ -206,6 +221,7 @@ const Registerpage = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    getCsrfToken();
     if (!validate()) return;
 
     const data = {

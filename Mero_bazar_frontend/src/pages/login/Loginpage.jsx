@@ -8,7 +8,7 @@ import fb from "../../assets/images/fbicon.png";
 import google from "../../assets/images/googleicon.png";
 import "toastify-js/src/toastify.css";
 import { useNavigate } from "react-router-dom";
-import Navbar from "../../components/Navbar";
+// import Navbar from "../../components/Navbar";
 import ReCAPTCHA from "react-google-recaptcha";
 
 const Loginpage = () => {
@@ -97,6 +97,7 @@ const Loginpage = () => {
   // };
   const handleLogin = async (e) => {
     e.preventDefault();
+    getCsrfToken();
     
     // Clear any existing errors
     setPhoneNumberError("");

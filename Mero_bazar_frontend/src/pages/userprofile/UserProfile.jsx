@@ -6,6 +6,7 @@ import "../userprofile/UserProfile.css";
 import {
   deletePost,
   getAllProductsByUserId,
+  getCsrfTokenApi,
   getSimilarProductsApi,
   getUserDetails,
   updatePost,
@@ -43,6 +44,17 @@ const UserProfile = () => {
 
   const [editingProfile, setEditingProfile] = useState(false);
   const [updatingImage, setUpdatingImage] = useState(false);
+  //csrf 
+      const getCsrfToken = async () => {
+        try {
+            const response = await getCsrfTokenApi();
+            localStorage.setItem('csrfToken', response.data.csrfToken);
+            // console.log('CSRF Token:', response.data.csrfToken);
+            console.log(response.data.csrfToken)
+        } catch (error) {
+            console.error('Error fetching CSRF token:', error);
+        }
+      };
 
   useEffect(() => {
     getAllProducts();
@@ -217,7 +229,7 @@ const UserProfile = () => {
             <h2 className="text-center mb-3">Profile</h2>
             <div className="d-flex justify-content-center position-relative">
               <img
-                src={profileImage ? URL.createObjectURL(profileImage) : `http://localhost:5000/profiles/${userDetail.profileImage}`}
+                src={profileImage ? URL.createObjectURL(profileImage) : `https://localhost:5000/profiles/${userDetail.profileImage}`}
                 alt=""
                 className="user-profile rounded-circle mb-3"
                 onClick={() => setUpdatingImage(true)}
@@ -307,7 +319,7 @@ const UserProfile = () => {
           {products.map((singleProduct) => (
             <div className="profile-post-card d-flex shadow p-3 mb-2 bg-light text-dark rounded" key={singleProduct._id}>
               <img
-                src={`http://localhost:5000/products/${singleProduct.productImage}`}
+                src={`https://localhost:5000/products/${singleProduct.productImage}`}
                 alt=""
                 className="rounded-circle me-2"
               />
@@ -433,7 +445,7 @@ const UserProfile = () => {
               className="profile-post-card d-flex shadow p-2 mb-2 bg-light text-dark rounded"
             >
               <img
-                src={`http://localhost:5000/products/${singleProduct.productImage}`}
+                src={`https://localhost:5000/products/${singleProduct.productImage}`}
                 alt=""
                 className="rounded-circle me-2"
               />

@@ -11,7 +11,7 @@ import axios from "axios";
 const csrfToken = localStorage.getItem('csrfToken');
 
 const Api = axios.create({
-    baseURL : "http://localhost:5000",
+    baseURL : "https://localhost:5000",
     withCredentials : true,
     headers : {
         "Content-Type" : "multipart/form-data",
@@ -133,7 +133,7 @@ export const toggleUserBlockApi = async (userId) => {
       const response = await Api.put(`api/user/toggle-block/${userId}`, {},);
       return response;
   } catch (error) {
-      throw error;
+      console.log('Error toggling user block:', error);
   }
 };
 
@@ -150,4 +150,4 @@ export const checkAdminAuth = () => {
 
 
 //csrf
-export const getCsrfTokenApi = () => Api.get('/test');
+export const getCsrfTokenApi = () => Api.get('/csrf');
